@@ -6,6 +6,12 @@
 const getCSV = require('./get_csv');
 
 module.exports = async function () {
-  
+  const records  = await getCSV('./f_06/v_04.csv',{
+                        columns: true,
+                        delimiter: ';',
+  });
+      const data = records.map(item => Object.values(item))
+       return data;
+
 }
 
