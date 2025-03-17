@@ -10,6 +10,7 @@ module.exports = async function () {
                             columns: true,
                             delimiter: ';',                                   
      });
-     return records;
+     const data = records.map(item => item.Capitals)
+     return data;
 }
 
