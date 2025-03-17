@@ -11,12 +11,12 @@
 
 
 // Task 02
-// const task_02 = require('./task_02');
+const task_02 = require('./task_02');
 
-// (async function () {
-//     let res = await task_02()
-//     console.log(res);
-// })();
+(async function () {
+    let res = await task_02()
+    console.log(res);
+})();
 
 
 // Task 03
