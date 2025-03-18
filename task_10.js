@@ -10,6 +10,6 @@ module.exports = async function () {
                                    columns : true,
                                    delimiter: ';'
        });
-       const data = records.map(item => item.format);
+       const data = records.map(({format,description}) => [format,description]);
        return data;
 }
