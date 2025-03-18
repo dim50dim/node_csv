@@ -9,7 +9,7 @@ module.exports = async function () {
      const records = await getCSV('./f_06/v_09.csv',{
                                       columns : true,
                                       delimiter : ';',
-                                    //   trim : true,
+                                      trim : true,
      });
      return records;
 }
